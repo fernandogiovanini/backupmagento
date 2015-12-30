@@ -1,3 +1,12 @@
-Script de backup para o magento
-===============================
-Cria um arquivo compactado com uma cópia do diretório media, do catálogo de produtos, do sistema (sem cache, media e catálogo) e do banco de dados em um diretório especificado na configuração.
+Magento backup script
+=====================
+
+This script create a tar.gz file containing media folder and a database dump.
+
+Edit the config file to configure the script.
+
+To run, add backup_magento.sh to the crontab file, for example, to execute everyday
+at 3am:
+```shell
+0 3 * * * /path/to/script/backup_magento.sh
+```
