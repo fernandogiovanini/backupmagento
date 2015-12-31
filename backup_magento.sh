@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration file
-CONFIG_FILE=config
+CONFIG_FILE=$(cd "$(dirname "$0")/"; pwd)/config
 
 # Includes config file
 if [[ -f "${CONFIG_FILE}" ]]; then
