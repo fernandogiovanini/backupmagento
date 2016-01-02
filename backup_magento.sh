@@ -33,8 +33,7 @@ tar -C "${MAGENTO_DIR}" \
     -cf "${BACKUP_DIR}"/"${BACKUP_FILE}" media
 
 # MySQL backup
-mysqldump -u ${MYSQL_USER} -p${MYSQL_PASS} -h ${MYSQL_HOST} ${MYSQL_DATABASE} \
-            > ${BACKUP_DIR}/backup_mysql.sql
+mysqldump --login-path=${MYSQL_LOGIN_PATH} ${MYSQL_DATABASE} > ${BACKUP_DIR}/backup_mysql.sql
 tar -C "${BACKUP_DIR}" -rf "${BACKUP_DIR}"/"${BACKUP_FILE}" backup_mysql.sql
 rm -f "${BACKUP_DIR}"/backup_mysql.sql
 

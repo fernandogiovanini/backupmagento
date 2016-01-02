@@ -1,9 +1,7 @@
-MAGENTO_DIR=magento_dir
+MAGENTO_DIR=magentodir
 
 BACKUP_DIR=~/backups
 BACKUP_FILE_PREFIX="backup_magento"
 
-MYSQL_USER=user
-MYSQL_PASS=user_pass
-MYSQL_DATABASE=db_name
-MYSQL_HOST=youhost
+MYSQL_LOGIN_PATH=your_login_path
+MYSQL_DATABASE=yout_database
